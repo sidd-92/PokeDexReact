@@ -1,3 +1,3 @@
 # PokeDexReact
 A Pokemon Character Reference 
-![Project Pokedex](projectPokedex.jpg)
+![Project Pokedex](PokeDexReact/pokecard/ProjectPokedex.png)
