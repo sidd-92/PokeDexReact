@@ -1,3 +1,3 @@
 # PokeDexReact
 A Pokemon Character Reference 
-Something new
+![Project Pokedex](projectPokedex.jpg)
