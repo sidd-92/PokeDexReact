@@ -8,15 +8,7 @@ class App extends Component {
       <React.Fragment>
         <div className="card-deck">
           {pokeDictionary.map(p => (
-            <ListPoke
-              key={p.name}
-              name={p.name}
-              abilities={p.abilities}
-              attack={p.attack}
-              defense={p.defense}
-              hp={p.hp}
-              speed={p.speed}
-            />
+            <ListPoke key={p.name} all={p} />
           ))}
         </div>
       </React.Fragment>

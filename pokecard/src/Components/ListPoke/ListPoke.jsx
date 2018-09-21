@@ -1,33 +1,74 @@
 import React from "react";
+const bulbasaur = require("../../assets/images/bulbasaur.png");
+const progressStyle = { height: "10px" };
 
-const ListPoke = ({ name, abilities, attack, defense, hp, speed }) => {
+const ListPoke = ({ all }) => {
   return (
     <div
       className="card mb-2 border border-dark rounded"
       style={{ minWidth: "18rem" }}
     >
+      <div className="card-header clearfix">
+        <span className="text-justify h4">{all.name}</span>
+        <span>
+          <img
+            className="img-thumbnail float-right"
+            src={bulbasaur}
+            alt="Picsum"
+          />
+        </span>
+      </div>
+
       <div className="card-body">
-        <h5 className="card-title">{name}</h5>
-        {abilities.map(a => (
+        <p className="card-title">
+          <div className="progress mb-1" style={progressStyle}>
+            <div
+              className="progress-bar"
+              role="progressbar"
+              style={{ width: "25%" }}
+              aria-valuenow="25"
+              aria-valuemin="0"
+              aria-valuemax="100"
+            >
+              Attack
+            </div>
+          </div>
+          <div className="progress" style={progressStyle}>
+            <div
+              className="progress-bar"
+              role="progressbar"
+              style={{ width: "25%" }}
+              aria-valuenow="25"
+              aria-valuemin="0"
+              aria-valuemax="100"
+            >
+              Attack
+            </div>
+          </div>
+        </p>
+
+        {all.abilities.map(a => (
           <p className="card-text" key={a} style={{ display: "inline" }}>
-            <span className="badge badge-danger ml-1">{a}</span>
+            <span className="badge badge-danger text-center">{a}</span>{" "}
           </p>
         ))}
-        <hr />
+      </div>
+
+      <div class="card-footer text-muted">
         <span className="text-info small">
           <b>A: </b>
-          {attack}{" "}
+          {all.attack}{" "}
           <span className="text-warning  ml-1">
             <b>D: </b>
-            {defense}{" "}
+            {all.defense}{" "}
           </span>
           <span className="text-secondary ml-1">
             <b>S: </b>
-            {speed}{" "}
+            {all.speed}{" "}
           </span>
           <span className="float-right text-danger">
             <b>HP: </b>
-            {hp}
+            {all.hp}
           </span>
         </span>
       </div>
