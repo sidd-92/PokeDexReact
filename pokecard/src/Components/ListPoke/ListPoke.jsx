@@ -1,6 +1,6 @@
 import React from "react";
 const bulbasaur = require("../../assets/images/bulbasaur.png");
-const progressStyle = { height: "10px" };
+const progressStyle = { height: "16px" };
 
 const ListPoke = ({ all }) => {
   return (
@@ -20,32 +20,24 @@ const ListPoke = ({ all }) => {
       </div>
 
       <div className="card-body">
-        <p className="card-title">
-          <div className="progress mb-1" style={progressStyle}>
-            <div
-              className="progress-bar"
-              role="progressbar"
-              style={{ width: "25%" }}
-              aria-valuenow="25"
-              aria-valuemin="0"
-              aria-valuemax="100"
-            >
-              Attack
-            </div>
-          </div>
+        <div className="card-title">
+          <span className="small">Sp. Attack : {all.sp_attack}</span>
           <div className="progress" style={progressStyle}>
             <div
-              className="progress-bar"
+              className="progress-bar progress-bar-striped bg-info"
               role="progressbar"
-              style={{ width: "25%" }}
-              aria-valuenow="25"
-              aria-valuemin="0"
-              aria-valuemax="100"
-            >
-              Attack
-            </div>
+              style={{ width: `${all.sp_attack}%` }}
+            />
           </div>
-        </p>
+          <span className="small">Sp. Defense : {all.sp_defense}</span>
+          <div className="progress" style={progressStyle}>
+            <div
+              className="progress-bar progress-bar-striped bg-success"
+              role="progressbar"
+              style={{ width: `${all.sp_defense}%` }}
+            />
+          </div>
+        </div>
 
         {all.abilities.map(a => (
           <p className="card-text" key={a} style={{ display: "inline" }}>
@@ -53,8 +45,7 @@ const ListPoke = ({ all }) => {
           </p>
         ))}
       </div>
-
-      <div class="card-footer text-muted">
+      <div className="card-footer text-muted">
         <span className="text-info small">
           <b>A: </b>
           {all.attack}{" "}
