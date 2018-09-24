@@ -1,6 +1,7 @@
 [
   {
     "abilities": ["Overgrow", "Chlorophyll"],
+    "index": 1,
     "against_bug": "1",
     "against_dark": "1",
     "against_dragon": "1",
@@ -44,6 +45,7 @@
   },
   {
     "abilities": ["Overgrow", "Chlorophyll"],
+    "index": 2,
     "against_bug": "1",
     "against_dark": "1",
     "against_dragon": "1",
@@ -87,6 +89,7 @@
   },
   {
     "abilities": ["Overgrow", "Chlorophyll"],
+    "index": 3,
     "against_bug": "1",
     "against_dark": "1",
     "against_dragon": "1",
@@ -130,6 +133,7 @@
   },
   {
     "abilities": ["Blaze", "Solar Power"],
+    "index": 4,
     "against_bug": "0.5",
     "against_dark": "1",
     "against_dragon": "1",
@@ -173,6 +177,7 @@
   },
   {
     "abilities": ["Blaze", "Solar Power"],
+    "index": 5,
     "against_bug": "0.5",
     "against_dark": "1",
     "against_dragon": "1",
@@ -216,6 +221,7 @@
   },
   {
     "abilities": ["Blaze", "Solar Power"],
+    "index": 5,
     "against_bug": "0.25",
     "against_dark": "1",
     "against_dragon": "1",
@@ -259,6 +265,7 @@
   },
   {
     "abilities": ["Torrent", "Rain Dish"],
+    "index": 5,
     "against_bug": "1",
     "against_dark": "1",
     "against_dragon": "1",
@@ -302,6 +309,7 @@
   },
   {
     "abilities": ["Torrent", "Rain Dish"],
+    "index": 5,
     "against_bug": "1",
     "against_dark": "1",
     "against_dragon": "1",
@@ -345,6 +353,7 @@
   },
   {
     "abilities": ["Torrent", "Rain Dish"],
+    "index": 5,
     "against_bug": "1",
     "against_dark": "1",
     "against_dragon": "1",

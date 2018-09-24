@@ -1,7 +1,7 @@
 import React from "react";
-const bulbasaur = require("../../assets/images/bulbasaur.png");
-const progressStyle = { height: "16px" };
 
+const progressStyle = { height: "16px" };
+let number = 1;
 const ListPoke = ({ all }) => {
   return (
     <div
@@ -13,8 +13,8 @@ const ListPoke = ({ all }) => {
         <span>
           <img
             className="img-thumbnail float-right"
-            src={bulbasaur}
-            alt="Picsum"
+            src={giveUrl(number)}
+            alt="Pic"
           />
         </span>
       </div>
@@ -67,4 +67,12 @@ const ListPoke = ({ all }) => {
   );
 };
 
+let giveUrl = () => {
+  let url =
+    "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/" +
+    number +
+    ".png";
+  number++;
+  return url;
+};
 export default ListPoke;
